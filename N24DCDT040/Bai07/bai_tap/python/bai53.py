@@ -1,0 +1,27 @@
+GRAPH = {"A": ["B", "C"], "B": ["D", "E"],
+         "C": ["D", "F"], "D": 5, "E": 3, "F": 7}
+
+def solve(name, is_max, memo, stats):
+    key = (name, is_max)
+    if key in memo:
+        stats["hit"] += 1
+        return memo[key]
+    stats["computed"] += 1
+    node = GRAPH[name]
+    if isinstance(node, int):
+        memo[key] = node
+        return node
+    best = -2e9 if is_max else 2e9
+    for child in node:
+        value = solve(child, not is_max, memo, stats)
+        # TODO: cập nhật best bằng max hoặc min theo is_max.
+        raise NotImplementedError("TODO: gộp điểm con")
+    # TODO: lưu memo[key] = best trước khi trả.
+    raise NotImplementedError("TODO: ghi nhớ nút trong")
+    return best
+
+# Sau TODO: điểm 5, computed=6, hit=1.
+memo, stats = {}, {"computed": 0, "hit": 0}
+print(solve("A", True, memo, stats), stats)
+# Gọi lại: không tính thêm; hit tăng thành 2.
+print(solve("A", True, memo, stats), stats)

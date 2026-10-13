@@ -1,0 +1,77 @@
+THUC HANH CHUONG 4. CAC MO HINH THUAT TOAN
+Thoi gian thuc hien: 07:00-10:00. Hinh thuc: ca nhan.
+
+BAT DAU TU DAU?
+1. Giai nen toan bo goi nay vao C:\TH_Chuong4 tren Windows.
+   Sau khi giai nen, trong thu muc do phai nhin thay tep Word va
+   cac tep bai1_luy_thua, bai2_chon_hoat_dong, bai3_day_con_tang
+   voi phan mo rong .py, .jl, .cpp.
+   Khong chay chuong trinh khi tep van nam ben trong ZIP.
+
+2. Mo Phieu_ThucHanh_Chuong4_ChiTiet_TungBuoc.docx.
+   Dung Save As de luu bao cao ca nhan theo ten:
+   MSSV_HoTenKhongDau_ThucHanh_Chuong4.docx
+
+3. CHI CHON MOT NGON NGU: Python, Julia hoac C++.
+   Ba bai deu co du ma bang ca ba ngon ngu de tham khao.
+   Khong bat buoc cai hoac chay ca ba ngon ngu trong buoi hoc.
+   Can chuan bi it nhat mot moi truong hoat dong truoc gio thuc hanh.
+
+4. Dien R0 o dau phieu.
+   d la chu so cuoi MSSV.
+   s la ma ca tu 1 den 6 do giang vien giao, khong tu chon.
+   Dung bang tra trong R0 de xac dinh du lieu cua tung bai:
+     Bai 1: A = 3 + d, M = 1009, so mu n theo s.
+     Bai 2: bo 7 hoat dong theo s, them hoat dong (d, d+3).
+     Bai 3: day A theo s, n = 7 + (d mod 3) phan tu dau.
+   Neu chua duoc giao s, bao giang vien truoc phan ca nhan.
+
+5. Doc trang huong dan chay cua ngon ngu da chon.
+   Lam Bai 1 (chia de tri), Bai 2 (tham lam), Bai 3 (quy hoach dong)
+   theo cac buoc trong Word. Mo tep ma mau tuong ung bang trinh soan
+   thao ma. Co the dung truc tiep ma trong cac tep nay hoac sao chep
+   toan bo khoi ma tuong ung o cuoi Word. Hai ban ma giong nhau.
+
+PHAN BIET BA NOI NHAP
+- Ma nguon: dan vao tep .py, .jl hoac .cpp trong trinh soan thao.
+- Lenh chay: nhap trong PowerShell hoac terminal thich hop.
+- Du lieu: chi go MOT so sau khi chuong trinh hoi.
+  Bai 1 hoi n (0..60): vi du go 45 roi Enter.
+  Bai 2 hoi tieu chi (1, 2 hoac 3): go 1 roi Enter.
+  Bai 3 hoi n (1..9): go 9 roi Enter.
+  Khong go n=45, khong go dau nhay. Muon nhap so khac, chay lai chuong trinh.
+
+TEN CAC CHUONG TRINH MAU
+Bai 1 (luy thua nhanh):        bai1_luy_thua.py / .jl / .cpp
+Bai 2 (chon hoat dong):        bai2_chon_hoat_dong.py / .jl / .cpp
+Bai 3 (day con tang dai nhat): bai3_day_con_tang.py / .jl / .cpp
+
+GIU MA MAU VA TAO BAN CA NHAN
+Dung Save As de tao bai1_ca_nhan, bai2_ca_nhan, bai3_ca_nhan
+voi dung phan mo rong cua ngon ngu da chon.
+Thay DIEN_MSSV va DIEN_MA_CA trong dong in bang thong tin cua minh.
+Du doan truoc khi chay ban ca nhan; giu lai du doan du chua dung.
+Dien ket qua thuc te, phan giai thich va minh chung vao R1, R2, R3.
+
+R4 chi yeu cau mot thu loi tren ban sao rieng cua ma MAU CHUA SUA.
+s chan: Bai 1 (dong nhan them A khi n le). s le: Bai 3 (dong tu[i] = j).
+Khoi phuc dong thu truoc khi nop.
+R5 duoc giao luc 09:30 va thuc hien duoi su giam sat cua giang vien.
+
+NOP BAI
+Nop truoc 10:00:
+- Mot tep Word da dien.
+- Mot ZIP ma nguon cua ngon ngu da chon theo huong dan cuoi phieu.
+Khong can nop tep .exe, bo cai hoac ma cua hai ngon ngu khong thuc hien.
+Ket qua mau trong tai lieu chi de doi chieu, khong phai minh chung ca nhan.
+
+LUU Y VE KIEM THU
+Ma Python va C++ da duoc thuc thi tren Linux trong qua trinh bien soan
+va cho dau ra giong het nhau tren cac ca kiem thu (45, 0, 1, 60, abc;
+tieu chi 1, 2, 3, 0, abc; n = 9, 7, 4, 1, 0, abc), ke ca ban ca nhan,
+ban thu loi va cac dap so trong bang tra.
+Ba chuong trinh Julia duoc ra soat nhung chua duoc thuc thi trong
+moi truong bien soan. Can chay xac nhan tren may lop truoc khi dung
+Julia de danh gia. Chua co kiem thu thuc thi truc tiep tren Windows/macOS.
+
+Goi sinh vien khong chua dap an nhiem vu truc tiep danh cho giang vien.
